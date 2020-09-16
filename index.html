@@ -2,203 +2,367 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport"
-				content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+				name="viewport">
+	<meta content="ie=edge" http-equiv="X-UA-Compatible">
 	<title>Chris' Portfolio</title>
 	<link href="output.css" rel="stylesheet">
+	<link href="static.css" rel="stylesheet">
 </head>
-<body class="w-full min-h-full flex flex-col justify-start inline-flex items-center py-0 px-0">
-	<header
-		class="bg-no-repeat bg-right bg-opacity-100 bg-cover w-full flex flex-col justify-center inline-flex items-center"
-		style="background-image:url('https://images.unsplash.com/photo-1529380633005-9641cec3952d?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9');"
-	>
-		<div class="w-full h-full bg-gray-900 bg-opacity-50 justify-center inline-flex items-center">
-			<div
-				class="max-w-5xl w-full mx-auto justify-center inline-flex items-center flex flex-col text-center px-24 space-y-6 py-48"
+<body
+	class="w-full min-h-full flex flex-col justify-start inline-flex items-center py-0 px-0 bg-gray-100 overflow-x-hidden">
+<!-- Hero -->
+<header
+	class="bg-no-repeat bg-right bg-opacity-100 bg-cover w-full flex flex-col justify-center inline-flex items-center"
+	style="background-image:url('https://images.unsplash.com/photo-1529380633005-9641cec3952d?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9');"
+>
+	<div class="w-full h-full bg-gray-900 bg-opacity-50 justify-center inline-flex items-center">
+		<div
+			class="max-w-3xl w-full mx-auto justify-center inline-flex items-center flex flex-col text-center px-4 sm:px-24 py-40 md:py-48"
+		>
+			<h1 class="font-sans text-4xl md:text-5xl tracking-tight text-gray-100 mb-4">
+				<span>Hi 👋 my name is</span>
+				<span class="font-semibold">Chris</span>
+			</h1>
+			<p class="font-medium text-gray-100 py-0 font-sans text-lg mb-12">
+				I am a full-stack engineer that specializes in creating beautiful, performant, and accessible web experiences.
+			</p>
+			<button
+				class="shadow-md bg-blue-500 font-light px-4 py-2 w-40 text-white rounded hover:bg-blue-600 transition-colors duration-200"
+				onclick="a11yScroll('#projects')"
 			>
-				<div class="flex space-x-2 py-5 text-center inline-flex items-center justify-center px-8">
-					<div class="text-gray-100 text-4xl">
-						Hi 👋 my name is
-					</div>
-					<h1 class="font-sans text-4xl font-semibold tracking-tight text-gray-100">
-						Chris
-					</h1>
-				</div>
-				<p class="font-medium text-gray-100 py-0 font-sans text-lg">
-					I am a full-stack engineer that specializes in creating beautiful, performant, and accessible web experiences.
-				</p>
-				<button
-					class="shadow-md bg-blue-500 font-light text-center px-4 py-2 w-40 text-white rounded justify-center"
-				>
-					Let's get started
-				</button>
-			</div>
+				Let's get started
+			</button>
 		</div>
-	</header>
-	<section class="w-full px-16 py-16 justify-center flex flex-col inline-flex items-center">
-		<h1 class="font-sans text-2xl font-bold tracking-wide w-full">
-			Projects
-		</h1>
-		<p class="pb-2 py-2 font-serif">
-			I have worked on a variety of different projects ranging from stunning landing pages to fully functional web apps
-			and PWAs. Many of my projects utilize git via GitHub for version control and are hosted on GitHub Pages or
-			Netlify. Displayed below are a few of these projects I've worked on:
-		</p>
-		<div class="w-full flex flex-col text-center inline-flex items-center space-y-2 py-6">
-			<div class="w-11/12">
-				<div class="w-full flex space-x-2">
-					<div class="w-4/12">
-						<img
-							class="w-full h-48 object-cover rounded-sm"
-							src="https://images.unsplash.com/photo-1599146467253-e574ee5cb852?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max"
-						/>
-					</div>
-					<div class="w-4/12">
-						<img
-							class="w-full h-48 object-cover rounded-sm"
-							src="https://images.unsplash.com/photo-1560393464-5c69a73c5770?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9"
-						/>
-					</div>
-					<div class="w-4/12">
-						<img
-							class="w-full h-48 object-cover rounded-sm"
-							src="https://images.unsplash.com/photo-1527545072428-eb6e6f9ccd7e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9"
-						/>
-					</div>
-				</div>
+	</div>
+</header>
+
+<!-- Main Content -->
+<section class="section justify-center flex flex-col inline-flex items-center" id="projects">
+	<h1 class="font-sans text-2xl font-bold tracking-wide w-full">
+		Projects
+	</h1>
+	<p class="mb-2 pb-2 py-2 font-serif">
+		I have worked on a variety of different projects ranging from stunning landing pages to fully functional web apps
+		and PWAs. Many of my projects utilize git via GitHub for version control and are hosted on GitHub Pages or
+		Netlify. Displayed below are a few of these projects I've worked on:
+	</p>
+	<div class="w-full grid grid-flow-row rows-auto place-items-center gap-4 py-6 projects-grid">
+		<!--	TODO: add real photos and alt attributes	-->
+		<!--	TODO: figure out why a <figcaption> can't be inside a <div>	-->
+		<figure class="rounded-sm overflow-hidden relative">
+			<img
+				class="w-full h-full object-cover"
+				src="assets/rackets.jpg"
+			/>
+			<div class="overlay absolute bottom-0 text-white bg-black w-100 p-4">
+				<figcaption class="text-lg font-semibold">Rackets</figcaption>
+				<a href="#" tabindex="0">View on GitHub</a>
 			</div>
-			<div class="w-11/12">
-				<div class="w-full flex space-x-2">
-					<div class="w-4/12">
-						<img
-							class="w-full h-48 object-cover rounded-sm"
-							src="https://images.unsplash.com/photo-1515169040891-100d5a84502c?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9"
-						/>
-					</div>
-					<div class="w-4/12">
-						<img
-							class="w-full h-48 object-cover rounded-sm"
-							src="https://images.unsplash.com/photo-1597976617698-72818839f4e0?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max"
-						/>
-					</div>
-					<div class="w-4/12">
-						<img
-							class="w-full h-48 object-cover rounded-sm bg-transparent"
-							src="https://images.unsplash.com/photo-1481349518771-20055b2a7b24?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9"
-						/>
-					</div>
-				</div>
+		</figure>
+		<figure class="rounded-sm overflow-hidden relative">
+			<img
+				class="w-full h-full object-cover"
+				src="assets/pink-cup.jpg"
+			/>
+			<div class="overlay absolute bottom-0 text-white bg-black w-100 p-4">
+				<figcaption class="text-lg font-semibold">Pink Cup</figcaption>
+				<a href="#" tabindex="0">View on GitHub</a>
 			</div>
+		</figure>
+		<figure class="rounded-sm overflow-hidden relative">
+			<img
+				class="w-full h-full object-cover"
+				src="assets/record-player.jpg"
+			/>
+			<div class="overlay absolute bottom-0 text-white bg-black w-100 p-4">
+				<figcaption class="text-lg font-semibold">Record Player</figcaption>
+				<a href="#" tabindex="0">View on GitHub</a>
+			</div>
+		</figure>
+		<figure class="rounded-sm overflow-hidden relative">
+			<img
+				class="w-full h-full object-cover"
+				src="assets/phone.jpg"
+			/>
+			<div class="overlay absolute bottom-0 text-white bg-black w-100 p-4">
+				<figcaption class="text-lg font-semibold">Phone</figcaption>
+				<a href="#" tabindex="0">View on GitHub</a>
+			</div>
+		</figure>
+		<figure class="rounded-sm overflow-hidden relative">
+			<img
+				class="w-full h-full object-cover"
+				src="assets/woman-dress.jpg"
+			/>
+			<div class="overlay absolute bottom-0 text-white bg-black w-100 p-4">
+				<figcaption class="text-lg font-semibold">Woman in a Dress</figcaption>
+				<a href="#" tabindex="0">View on GitHub</a>
+			</div>
+		</figure>
+		<figure class="rounded-sm overflow-hidden relative">
+			<img
+				class="w-full h-full object-cover"
+				src="assets/banana.jpg"
+			/>
+			<div class="overlay absolute bottom-0 text-white bg-black w-100 p-4">
+				<figcaption class="text-lg font-semibold">Banana</figcaption>
+				<a href="#" tabindex="0">View on GitHub</a>
+			</div>
+		</figure>
+	</div>
+</section>
+
+<div class="w-10/12 lg:w-1/2 lg:m-12 h-1 bg-pink-200 bg-opacity-100 rounded-full"></div>
+
+<section class="section" id="skills">
+	<h1 class="font-sans text-2xl font-bold tracking-wider text-left">
+		Skills
+	</h1>
+	<p class="mb-4 pb-2 py-2 font-serif">
+		As a programmer I've developed many important language- and framework-agnostic skills as well as the ability to
+		work with many of today's languages and tools. These skills allow me to operate in more than just one field
+		when necessary.<br/>
+		<br/>
+		I have built both front- and back-end applications that function in harmony as well as scripts, CLIs, and
+		automation tools that enhance the experience of developers. Listed below are some of my skills:
+	</p>
+	<div class="w-full grid place-items-center">
+		<div class="w-auto py-4 bg-transparent grid grid-cols-1 md:grid-cols-2 place-items-center md:gap-16">
+			<ol class="w-auto flex flex-col leading-6 md:py-4 col-span-1">
+				<li>
+					<p class="pb-3 font-semibold">
+						Very Fast Learner
+					</p>
+				</li>
+				<li>
+					<p class="pb-3">
+						HTML5, CSS4, and SCSS
+					</p>
+				</li>
+				<li>
+					<p class="pb-3">
+						React.js, Vue.js, and Angular
+					</p>
+				</li>
+				<li>
+					<p class="pb-3">
+						Object Oriented Programming
+					</p>
+				</li>
+				<li>
+					<p class="pb-3">
+						Test-driven development
+					</p>
+				</li>
+			</ol>
+			<ol class="w-auto flex flex-col md:py-4 col-span-1">
+				<li>
+					<p class="pb-3">
+						JavaScript and TypeScript
+					</p>
+				</li>
+				<li>
+					<p class="pb-3">
+						Express.js, Koa.js, and Fastify
+					</p>
+				</li>
+				<li>
+					<p class="pb-3">
+						Agile and Kanban development
+					</p>
+				</li>
+				<li>
+					<p class="pb-3">
+						MVC and Client-server model
+					</p>
+				</li>
+				<li>
+					<p class="pb-3">
+						REST and GraphQL APIs
+					</p>
+				</li>
+			</ol>
 		</div>
-	</section>
-	<div class="w-11/12 h-1 bg-pink-200 bg-opacity-100 rounded-full"></div>
-	<section class="w-full py-16 px-16">
-		<h1 class="font-sans text-2xl font-bold tracking-wider text-left">
-			Skills
-		</h1>
-		<p class="pb-2 py-2 font-serif">
-			As a programmer I've developed many important language- and framework-agnostic skills as well as the ability to
-			work with many different languages and frameworks. These skills allow me to operate in more than just one field
-			when necessary.<br />
-			<br />
-			I have built both front- and back-end applications that function in harmony as well as scripts, CLIs, and
-			automation tools that enhance the experience of developers. Listed below are some of my skills:
-		</p>
-		<div class="w-full grid place-items-center">
-			<div class="w-auto py-4 bg-transparent grid grid-cols-1 md:grid-cols-2 place-items-center md:gap-16">
-				<ol class="w-auto flex flex-col leading-6 md:py-4 col-span-1">
-					<li>
-						<p class="pb-3 font-semibold">
-							Very Fast Learner
-						</p>
-					</li>
-					<li class="w-full">
-						<p class="pb-3">
-							HTML5, CSS4, and SCSS
-						</p>
-					</li>
-					<li class="w-full">
-						<p class="pb-3">
-							React.js, Vue.js, and Angular
-						</p>
-					</li>
-					<li class="w-full">
-						<p class="pb-3">
-							Object Oriented Programming
-						</p>
-					</li>
-					<li>
-						<p class="pb-3">
-							Test-driven development
-						</p>
-					</li>
-				</ol>
-				<ol class="w-auto flex flex-col md:py-4 col-span-1">
-					<li class="w-full">
-						<p class="pb-3">
-							JavaScript and TypeScript
-						</p>
-					</li>
-					<li class="w-full">
-						<p class="pb-3">
-							Express.js, Koa.js, and Fastify
-						</p>
-					</li>
-					<li class="w-full">
-						<p class="pb-3">
-							Agile and Kanban development
-						</p>
-					</li>
-					<li>
-						<p class="pb-3">
-							MVC and Client-server model
-						</p>
-					</li>
-					<li>
-						<p class="pb-3">
-							REST and GraphQL APIs
-						</p>
-					</li>
-				</ol>
-			</div>
-		</div>
-	</section>
-	<section class="w-full px-16 py-16 bg-gray-800">
-		<h1 class="font-sans text-xl font-semibold tracking-tight text-gray-100">
-			Contact
-		</h1>
-		<p class="pb-2 py-2 font-serif text-gray-200 md:text-justify">
-			I am currently not available for full-time work but I am open to conversation about future opportunities,
-			collaboration, and open-source projects.
-		</p>
-		<div class="max-w-5xl w-full py-4">
-			<span class="w-full flex space-x-2 justify-center md:justify-start">
-				<a href="https://github.com/ChrisBrownie55" class="w-auto flex space-x-1 px-3 py-2 text-gray-100 focus:text-blue-300 hover:text-blue-300 transition-colors duration-200 ease-in-out" tabindex="0">
-					<svg class="w-6 h-6 mdi mdi-github-box" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4.44c-.32-.07-.33-.68-.33-.89l.01-2.47c0-.84-.29-1.39-.61-1.67c2.01-.22 4.11-.97 4.11-4.44c0-.98-.35-1.79-.92-2.42c.09-.22.4-1.14-.09-2.38c0 0-.76-.23-2.48.93c-.72-.2-1.48-.3-2.25-.31c-.76.01-1.54.11-2.25.31c-1.72-1.16-2.48-.93-2.48-.93c-.49 1.24-.18 2.16-.09 2.38c-.57.63-.92 1.44-.92 2.42c0 3.47 2.1 4.22 4.1 4.47c-.26.2-.49.6-.57 1.18c-.52.23-1.82.63-2.62-.75c0 0-.48-.86-1.38-.93c0 0-.88 0-.06.55c0 0 .59.28 1 1.32c0 0 .52 1.75 3.03 1.21l.01 1.53c0 .21-.02.82-.34.89H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z" fill="currentColor"/></svg>
-					<span>
+	</div>
+</section>
+
+<section class="w-full bg-gray-700" id="contact">
+	<div class="section flex flex-row">
+		<div class="w-full lg:w-1/2 py-8 md:py-16">
+			<h1 class="font-sans text-xl font-semibold tracking-tight text-gray-100">
+				Contact
+			</h1>
+			<p class="pb-2 py-2 font-serif text-gray-200 md:text-justify max-w-2xl">
+				I am currently not available for full-time work but I am open to conversation about future opportunities,
+				collaboration, and open-source projects.
+			</p>
+			<div class="max-w-5xl w-full pt-4">
+				<div class="w-full flex space-x-2 justify-center md:justify-start">
+					<a
+						class="w-auto flex space-x-1 px-3 py-2 text-gray-100 focus:text-blue-300 hover:text-blue-300 transition-colors duration-200 ease-in-out"
+						href="https://github.com/ChrisBrownie55"
+						tabindex="0">
+						<svg aria-hidden="true" class="w-6 h-6 mdi mdi-github-box" focusable="false" height="1em"
+								 preserveAspectRatio="xMidYMid meet"
+								 style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+								 viewBox="0 0 24 24"
+								 width="1em" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4.44c-.32-.07-.33-.68-.33-.89l.01-2.47c0-.84-.29-1.39-.61-1.67c2.01-.22 4.11-.97 4.11-4.44c0-.98-.35-1.79-.92-2.42c.09-.22.4-1.14-.09-2.38c0 0-.76-.23-2.48.93c-.72-.2-1.48-.3-2.25-.31c-.76.01-1.54.11-2.25.31c-1.72-1.16-2.48-.93-2.48-.93c-.49 1.24-.18 2.16-.09 2.38c-.57.63-.92 1.44-.92 2.42c0 3.47 2.1 4.22 4.1 4.47c-.26.2-.49.6-.57 1.18c-.52.23-1.82.63-2.62-.75c0 0-.48-.86-1.38-.93c0 0-.88 0-.06.55c0 0 .59.28 1 1.32c0 0 .52 1.75 3.03 1.21l.01 1.53c0 .21-.02.82-.34.89H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"
+								fill="currentColor"/>
+						</svg>
+						<span>
 						GitHub
 					</span>
-				</a>
-				<a href="https://twitter.com/ChrisHBrown55" class="w-auto flex space-x-1 px-3 py-2 text-gray-100 focus:text-blue-300 hover:text-blue-300 transition-colors duration-200 ease-in-out" tabindex="0">
-					<svg class="w-6 h-6 mdi mdi-twitter-box" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2m12.71 6.33c.48-.4 1.04-.88 1.29-1.41c-.41.21-.9.34-1.44.41c.5-.36.91-.83 1.12-1.47c-.52.28-1.05.52-1.71.64c-1.55-1.87-5.26-.35-4.6 2.45c-2.61-.16-4.2-1.34-5.52-2.79c-.75 1.22-.1 3.07.79 3.58c-.46-.03-.81-.17-1.14-.33c.04 1.54.89 2.28 2.08 2.68c-.36.07-.76.09-1.14.03c.37 1.07 1.14 1.74 2.46 1.88c-.9.76-2.56 1.29-3.9 1.08c1.15.73 2.46 1.31 4.28 1.23c4.41-.2 7.36-3.36 7.43-7.98z" fill="currentColor"/></svg>
-					<span>
+					</a>
+					<a
+						class="w-auto flex space-x-1 px-3 py-2 text-gray-100 focus:text-blue-300 hover:text-blue-300 transition-colors duration-200 ease-in-out"
+						href="https://twitter.com/ChrisHBrown55"
+						tabindex="0">
+						<svg aria-hidden="true" class="w-6 h-6 mdi mdi-twitter-box" focusable="false" height="1em"
+								 preserveAspectRatio="xMidYMid meet"
+								 style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+								 viewBox="0 0 24 24"
+								 width="1em" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2m12.71 6.33c.48-.4 1.04-.88 1.29-1.41c-.41.21-.9.34-1.44.41c.5-.36.91-.83 1.12-1.47c-.52.28-1.05.52-1.71.64c-1.55-1.87-5.26-.35-4.6 2.45c-2.61-.16-4.2-1.34-5.52-2.79c-.75 1.22-.1 3.07.79 3.58c-.46-.03-.81-.17-1.14-.33c.04 1.54.89 2.28 2.08 2.68c-.36.07-.76.09-1.14.03c.37 1.07 1.14 1.74 2.46 1.88c-.9.76-2.56 1.29-3.9 1.08c1.15.73 2.46 1.31 4.28 1.23c4.41-.2 7.36-3.36 7.43-7.98z"
+								fill="currentColor"/>
+						</svg>
+						<span>
 						Twitter
 					</span>
-				</a>
-				<a href="mailto:chris_brown@hey.com" class="w-auto flex space-x-1 px-3 py-2 text-gray-100 focus:text-blue-300 hover:text-blue-300 transition-colors duration-200 ease-in-out" tabindex="0">
-					<svg class="w-6 h-6 mdi mdi-email" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M20 8l-8 5l-8-5V6l8 5l8-5m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z" fill="currentColor"/></svg>
-					<span>
+					</a>
+					<a
+						class="w-auto flex space-x-1 px-3 py-2 text-gray-100 focus:text-blue-300 hover:text-blue-300 transition-colors duration-200 ease-in-out"
+						href="mailto:chris_brown@hey.com"
+						tabindex="0">
+						<svg aria-hidden="true" class="w-6 h-6 mdi mdi-email" focusable="false" height="1em"
+								 preserveAspectRatio="xMidYMid meet"
+								 style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+								 viewBox="0 0 24 24"
+								 width="1em" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M20 8l-8 5l-8-5V6l8 5l8-5m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z"
+								fill="currentColor"/>
+						</svg>
+						<span>
 						Email
 					</span>
-				</a>
+					</a>
+				</div>
 			</div>
 		</div>
-	</section>
-	<footer class="max-w-5xl w-full mx-auto p-8">
-	<div class="text-center">
-		Copyright © 2020 Chris Brown. All rights reserved.
+		<div class="w-0 lg:w-1/2 h-0 lg:h-48 grid place-items-end invisible lg:visible">
+			<svg class="max-w-md h-auto transform translate-y-8" data-name="Layer 1"
+					 height="742.06281" id="a7911dd8-4c59-47c4-8e89-f08275b909c0" viewBox="0 0 902.09746 742.06281" width="902.09746"
+					 xmlns="http://www.w3.org/2000/svg">
+				<path
+					d="M945.69481,680.39584c-18.17319,35.46508-41.224,69.76412-70.3892,100.80763-.64768.70106-1.30191,1.384-1.96193,2.07929l-69.10082-32.713c.42274-.70236.88624-1.49062,1.38456-2.35263,29.68322-50.787,208.86487-360.59146,203.20295-430.75835C1009.48992,323.24579,1030.72855,514.62775,945.69481,680.39584Z"
+					fill="#e6e6e6" transform="translate(-148.95127 -78.96859)"/>
+				<path
+					d="M888.6368,787.51457c-.96723.54979-1.959,1.088-2.95723,1.60811l-51.83786-24.54052c.72474-.51422,1.569-1.12219,2.53944-1.80589,15.88129-11.40253,63.10529-45.61328,109.31366-82.38043,49.658-39.51087,98.15212-81.96412,105.35392-102.22834C1049.58586,582.8143,1004.13425,724.06455,888.6368,787.51457Z"
+					fill="#e6e6e6" transform="translate(-148.95127 -78.96859)"/>
+				<ellipse cx="267" cy="715.62717" fill="#e6e6e6" rx="267" ry="26.43564"/>
+				<circle cx="120.80209" cy="648.05071" fill="#4299e1" r="80"/>
+				<path
+					d="M301.79872,693.448H237.708a10.69385,10.69385,0,0,0-10.68177,10.68178v45.779A10.69381,10.69381,0,0,0,237.708,760.5906h64.09076a10.69382,10.69382,0,0,0,10.68181-10.68182v-45.779A10.69386,10.69386,0,0,0,301.79872,693.448Zm0,6.10388a4.55709,4.55709,0,0,1,1.13374.14789l-33.17168,26.46129-32.97773-26.51513a4.581,4.581,0,0,1,.92491-.09405Zm0,54.93484H237.708a4.58317,4.58317,0,0,1-4.5779-4.57794v-45.3679l34.711,27.90888a3.052,3.052,0,0,0,3.81549.00726l34.72013-27.69675v45.14851A4.58317,4.58317,0,0,1,301.79872,754.48672Z"
+					fill="#fff" transform="translate(-148.95127 -78.96859)"/>
+				<polygon fill="#2f2e41" points="340.407 445.28 275.039 449.483 257.506 387.422 314.96 373.958 340.407 445.28"/>
+				<path
+					d="M578.492,605.51982l17.90009.14725a12.45383,12.45383,0,0,0,12.3984-14.43007v0a12.45382,12.45382,0,0,0-17.80692-9.19146L574.103,590.37528l-57.73653,12.8756L491.63133,577.9617l-14.20818,23.401,33.378,25.78787Z"
+					fill="#ffb8b8" transform="translate(-148.95127 -78.96859)"/>
+				<path
+					d="M575.137,790.4585l-21.0895,4.05567c-14.40536-45.40853-30.013-88.41084-30.012-121.67018C503.6494,695.53294,478.369,708.51332,448.6,712.58958l3.24454-50.29034,24.334-12.97815,37.243-17.18908a28.28069,28.28069,0,0,1,10.36483-2.56388h0a28.28063,28.28063,0,0,1,29.41184,23.77347Z"
+					fill="#ffb8b8" transform="translate(-148.95127 -78.96859)"/>
+				<path
+					d="M571.89243,770.18014s2.02224-.85658,10.09824,9.71125c0,0,25.79022,4.80247,21.52492,16.43182s-37.426,11.26375-40.57724,9.48708-28.23273-1.74019-26.499-9.64142,11.72475-16.73206,11.72475-16.73206,4.59371,9.3079,11.73393,9.347c9.56095.05239,12.80549-8.059,11.18322-16.1703C571.0661,772.53753,571.95368,770.229,571.89243,770.18014Z"
+					fill="#2f2e41" transform="translate(-148.95127 -78.96859)"/>
+				<path
+					d="M409.61135,742.522s3.15964,8.63711-11.06619,13.84121c0,0-13.95383,26.41871-25.15568,17.84333s.42261-44.511,3.42149-47.33621,11.45081-30.11151,19.45571-25.55113,14.22515,18.41448,14.22515,18.41448-25.775,8.27691-13.58211,27.43484C396.90972,747.16856,402.22575,747.52808,409.61135,742.522Z"
+					fill="#2f2e41" transform="translate(-148.95127 -78.96859)"/>
+				<circle cx="290.13864" cy="407.90843" fill="#ffb8b8" r="26.56097"/>
+				<path
+					d="M461.9837,557.25732H415.749l-9.73361-28.38971c16.87461-5.15073,12.933-19.77814,9.73361-34.06765H461.9837c-8.96327,17.87726-20.09875,43.17784,1.62227,47.85694Z"
+					fill="#ffb8b8" transform="translate(-148.95127 -78.96859)"/>
+				<path
+					d="M474.15072,706.50608l-8.40559,6.38824a26.03084,26.03084,0,0,1-25.66205,3.34538h0c-24.07541-18.04606-43.71077-12.638-59.21282,14.60042-18.59411-20.98528-20.65027-51.37887-4.05568-82.73572l92.06378,2.02783,18.65609-5.67794Z"
+					fill="#2f2e41" transform="translate(-148.95127 -78.96859)"/>
+				<path
+					d="M443.49022,800.48525l0,0a23.50693,23.50693,0,0,1-27.81977-11.721c-8.27361-7.28739-15.25455-17.72094-21.30929-30.40862A235.35214,235.35214,0,0,1,383.194,729.67237c-4.18966-12.94009,2.81585-27.07679,15.85472-30.94809q.58159-.17268,1.17736-.32559c17.40628-4.46885,35.28122,5.57064,41.23113,22.52787l17.30115,49.30829A23.507,23.507,0,0,1,443.49022,800.48525Z"
+					fill="#ffb8b8" transform="translate(-148.95127 -78.96859)"/>
+				<path d="M391.415,752.74074s20.27836,22.71177,24.334,35.68992" opacity="0.2"
+							transform="translate(-148.95127 -78.96859)"/>
+				<path
+					d="M312.7676,645.55531l-6.78679,16.56425a12.45383,12.45383,0,0,0,8.79115,16.872h0a12.45383,12.45383,0,0,0,15.14908-13.11773l-1.4623-18.76695,9.4957-58.38766,32.66858-13.5696-16.44763-21.885-36.3425,21.40861Z"
+					fill="#ffb8b8" transform="translate(-148.95127 -78.96859)"/>
+				<path
+					d="M474.96185,648.10439c-23.30586,39.14729-60.78716,32.27676-100.58068,1.62227,16.78233-12.54764,6.48908-48.66808-8.11134-51.10148-15.09761-2.51627-16.91328-33.39206-22.71177-48.66807l70.5687-25.95631,19.06167,15.006,19.06166-4.46124,7.81479,2.773a26.41992,26.41992,0,0,1,17.58227,24.53686C461.633,584.99093,449.77787,609.6709,474.96185,648.10439Z"
+					fill="#4299e1" transform="translate(-148.95127 -78.96859)"/>
+				<path
+					d="M483.88433,616.47014s-3.59181-18.51977-15.3824-12.70721-12.60174-10.41012-12.60174-10.41012l9.32805-53.94045,38.12332,40.55673Z"
+					fill="#4299e1" transform="translate(-148.95127 -78.96859)"/>
+				<path
+					d="M463.89836,452.693s13.46093,5.04772,13.64919,22.96789a32.34842,32.34842,0,0,1-1.27476,8.9109c-.9047,3.28517-1.67052,10.42373,4.13385,20a184.66315,184.66315,0,0,1,10.2482,19.27125h0l-15.21893,1.33267-2.29135-25.22953a125.12513,125.12513,0,0,0-8.62394-35.61888l-.09618-.23767s-7.08336,12.063-20.33858,11.57218l4.9093-4.55871s-16.66168,6.10668-25.70271,7.28237a5.71887,5.71887,0,0,0-3.52817,9.47905q.07869.08767.16074.176c5.47046,5.89116,16.34125,19.56707,9.328,29.73647s-1.43763,13.22015-1.43763,13.22015L417.611,524.93078l-4.62883-3.01569-.14024,3.7872-24.51164-3.75192s-6.59255-1.19221,8.20546-16.762c0,0,3.98172-6.11159,2.54056-11.56328a27.21109,27.21109,0,0,1-.56275-12.75524C402.35235,463.23828,416.142,428.41243,463.89836,452.693Z"
+					fill="#2f2e41" transform="translate(-148.95127 -78.96859)"/>
+				<path d="M948.22812,251.91361h-4v-109.545a63.4,63.4,0,0,0-63.4-63.4h-232.087a63.4,63.4,0,0,0-63.4,63.4v600.974a63.4,63.4,0,0,0,63.4,63.4h232.086a63.4,63.4,0,0,0,63.4-63.4V329.88959h4Z" data-name="Path 33"
+							fill="#3f3d56"
+							id="b82a9922-ead1-40af-af3b-f133b244cde7" transform="translate(-148.95127 -78.96859)"/>
+				<path d="M883.38608,95.4616h-30.295a22.495,22.495,0,0,1-20.828,30.994h-132.959a22.495,22.495,0,0,1-20.827-30.991h-28.3a47.348,47.348,0,0,0-47.348,47.348v600.089a47.348,47.348,0,0,0,47.348,47.348H883.37711a47.348,47.348,0,0,0,47.348-47.348v-.00007h0v-600.092a47.348,47.348,0,0,0-47.348-47.348h.009Z" data-name="Path 34"
+							fill="#fff"
+							id="b2a7827b-2d2c-407d-93be-35e4c67116bc" transform="translate(-148.95127 -78.96859)"/>
+				<circle cx="618.23084" cy="651.74599" data-name="Ellipse 7" fill="#e6e6e6" id="e6b07811-3d0f-4972-ba4c-46b0c6566e33"
+								r="26"/>
+				<path
+					d="M661.70582,490.26682c-2.45763,0-4.45757,2.28274-4.45757,5.08789s1.99994,5.0879,4.45757,5.0879H871.84839c2.45763,0,4.45757-2.28274,4.45757-5.0879s-1.99994-5.08789-4.45757-5.08789Z"
+					fill="#e6e6e6" transform="translate(-148.95127 -78.96859)"/>
+				<path
+					d="M661.70582,610.26682c-2.45763,0-4.45757,2.28274-4.45757,5.08789s1.99994,5.0879,4.45757,5.0879H871.84839c2.45763,0,4.45757-2.28274,4.45757-5.0879s-1.99994-5.08789-4.45757-5.08789Z"
+					fill="#e6e6e6" transform="translate(-148.95127 -78.96859)"/>
+				<path
+					d="M661.70582,520.7942c-2.45763,0-4.45757,2.28274-4.45757,5.0879s1.99994,5.08789,4.45757,5.08789h90.425c2.45764,0,4.45757-2.28274,4.45757-5.08789s-1.99993-5.0879-4.45757-5.0879Z"
+					fill="#e6e6e6" transform="translate(-148.95127 -78.96859)"/>
+				<path
+					d="M661.70582,549.89259c-2.45763,0-4.45757,2.28274-4.45757,5.08789s1.99994,5.0879,4.45757,5.0879H871.84839c2.45763,0,4.45757-2.28274,4.45757-5.0879s-1.99994-5.08789-4.45757-5.08789Z"
+					fill="#e6e6e6" transform="translate(-148.95127 -78.96859)"/>
+				<path
+					d="M661.70582,580.42c-2.45763,0-4.45757,2.28274-4.45757,5.0879s1.99994,5.08789,4.45757,5.08789h90.425c2.45764,0,4.45757-2.28274,4.45757-5.08789s-1.99993-5.0879-4.45757-5.0879Z"
+					fill="#e6e6e6" transform="translate(-148.95127 -78.96859)"/>
+				<path
+					d="M701.37683,258.59576H832.19035a5.457,5.457,0,0,1,5.45054,5.45054V400.28321a5.457,5.457,0,0,1-5.45054,5.45054H701.37683a5.457,5.457,0,0,1-5.45054-5.45054V264.0463A5.457,5.457,0,0,1,701.37683,258.59576Z"
+					fill="#4299e1" transform="translate(-148.95127 -78.96859)"/>
+				<path d="M804.31659,377.63922a3.70044,3.70044,0,1,0,0-7.40087h-75.066a3.70044,3.70044,0,1,0,0,7.40087Z"
+							fill="#fff" transform="translate(-148.95127 -78.96859)"/>
+				<path d="M804.31659,355.83706a3.70044,3.70044,0,0,0,0-7.40088h-75.066a3.70044,3.70044,0,1,0,0,7.40088Z"
+							fill="#fff" transform="translate(-148.95127 -78.96859)"/>
+				<path
+					d="M766.78332,286.69029a23.29255,23.29255,0,1,1-23.29254,23.29254A23.31893,23.31893,0,0,1,766.78332,286.69029Z"
+					fill="#fff" transform="translate(-148.95127 -78.96859)"/>
+			</svg>
+		</div>
 	</div>
+</section>
+
+<!-- Copyright -->
+<footer class="w-full px-2 py-6 md:py-8 bg-gray-900">
+	<small class="block text-center text-gray-100 text-sm sm:text-base">
+		Copyright © <span data-year>2020</span> Chris Brown. All rights reserved.
+	</small>
 </footer>
+
+<!-- Accessible Native Smooth Scrolling Function -->
+<script>
+	function a11yScroll(selector) {
+		const behavior = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+			? 'auto'
+			: 'smooth'
+		document.querySelector(selector).scrollIntoView({behavior})
+	}
+</script>
+
+<!-- Dynamic Copyright Year -->
+<script>
+	document.querySelector('[data-year]').textContent = new Date().getUTCFullYear()
+</script>
 </body>
 </html>
