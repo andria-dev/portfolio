@@ -4,21 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="42d99516-72fc-4431-aff7-af3eb8eff7c6" name="Default Changelist" comment="Design finished, just need project photos">
-      <change afterPath="$PROJECT_DIR$/assets/dev-blog.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/movie-collector.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/notably.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/partyox-queue.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/partyox.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/pwa-icon-gen.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/rebuild-black-business.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/useshoppingcart.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static.css" beforeDir="false" afterPath="$PROJECT_DIR$/static.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
-    </list>
+    <list default="true" id="42d99516-72fc-4431-aff7-af3eb8eff7c6" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -83,7 +69,7 @@
       <workItem from="1600286288771" duration="1012000" />
       <workItem from="1600374056586" duration="887000" />
       <workItem from="1600376389606" duration="36000" />
-      <workItem from="1602688403639" duration="3580000" />
+      <workItem from="1602688403639" duration="3697000" />
     </task>
     <task id="LOCAL-00001" summary="Working on fixing mobile">
       <created>1600129680584</created>
@@ -99,7 +85,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600273971601</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Project photos added!">
+      <created>1602693844870</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1602693844870</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,21 +103,22 @@
     <MESSAGE value="Working on fixing mobile" />
     <MESSAGE value="Design finished, just need projects" />
     <MESSAGE value="Design finished, just need project photos" />
-    <option name="LAST_COMMIT_MESSAGE" value="Design finished, just need project photos" />
+    <MESSAGE value="Project photos added!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Project photos added!" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="73" key="#Plugins" timestamp="1600038416051">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="361" y="73" key="#Plugins/0.0.1536.864@0.0.1536.864" timestamp="1600038416051" />
-    <state x="325" y="0" key="CommitChangelistDialog2" timestamp="1600273969661">
+    <state x="325" y="0" key="CommitChangelistDialog2" timestamp="1602693844078">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="325" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1600273969661" />
-    <state x="361" y="165" key="Vcs.Push.Dialog.v2" timestamp="1600129682026">
+    <state x="325" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1602693844078" />
+    <state x="361" y="165" key="Vcs.Push.Dialog.v2" timestamp="1602693848449">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="361" y="165" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1600129682026" />
+    <state x="361" y="165" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1602693848449" />
     <state x="425" y="197" key="run.anything.popup" timestamp="1600269200438">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
