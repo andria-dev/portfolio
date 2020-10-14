@@ -5,17 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="42d99516-72fc-4431-aff7-af3eb8eff7c6" name="Default Changelist" comment="Design finished, just need project photos">
-      <change afterPath="$PROJECT_DIR$/assets/banana.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/phone.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/pink-cup.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/rackets.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/record-player.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/woman-dress.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/dev-blog.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/movie-collector.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/notably.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/partyox-queue.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/partyox.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/pwa-icon-gen.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/rebuild-black-business.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/useshoppingcart.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static.css" beforeDir="false" afterPath="$PROJECT_DIR$/static.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +79,11 @@
       <workItem from="1600025408578" duration="12140000" />
       <workItem from="1600129659201" duration="12040000" />
       <workItem from="1600205978407" duration="596000" />
-      <workItem from="1600224708365" duration="8132000" />
+      <workItem from="1600224708365" duration="8507000" />
+      <workItem from="1600286288771" duration="1012000" />
+      <workItem from="1600374056586" duration="887000" />
+      <workItem from="1600376389606" duration="36000" />
+      <workItem from="1602688403639" duration="3580000" />
     </task>
     <task id="LOCAL-00001" summary="Working on fixing mobile">
       <created>1600129680584</created>
@@ -87,7 +92,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600129680584</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Design finished, just need project photos">
+      <created>1600273971601</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1600273971601</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -105,10 +117,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="361" y="73" key="#Plugins/0.0.1536.864@0.0.1536.864" timestamp="1600038416051" />
-    <state x="325" y="0" key="CommitChangelistDialog2" timestamp="1600273874897">
+    <state x="325" y="0" key="CommitChangelistDialog2" timestamp="1600273969661">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="325" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1600273874897" />
+    <state x="325" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1600273969661" />
     <state x="361" y="165" key="Vcs.Push.Dialog.v2" timestamp="1600129682026">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -117,9 +129,9 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="425" y="197" key="run.anything.popup/0.0.1536.864@0.0.1536.864" timestamp="1600269200438" />
-    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1600267897452">
+    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1600274008892">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1600267897452" />
+    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1600274008892" />
   </component>
 </project>
