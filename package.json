@@ -4,10 +4,13 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "tailwindcss": "^1.8.9"
+    "autoprefixer": "^10.0.2",
+    "nodemon": "^2.0.6",
+    "postcss": "^8.1.9",
+    "tailwindcss": "^2.0.1"
   },
   "scripts": {
     "build:css": "yarn tailwindcss build styles.css -o output.css",
-    "watch:css": "echo [ERR] Watch not implemented!"
+    "watch:css": "nodemon --exec \"yarn build:css\" -w ./styles.css"
   }
 }

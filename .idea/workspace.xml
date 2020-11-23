@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="42d99516-72fc-4431-aff7-af3eb8eff7c6" name="Default Changelist" comment="" />
+    <list default="true" id="42d99516-72fc-4431-aff7-af3eb8eff7c6" name="Default Changelist" comment="Fix a11y of &lt;figure&gt;&#10;Fix project breakpoint sizes">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/dev-blog.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/dev-blog.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output.css" beforeDir="false" afterPath="$PROJECT_DIR$/output.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,6 +79,9 @@
       <workItem from="1600374056586" duration="887000" />
       <workItem from="1600376389606" duration="36000" />
       <workItem from="1602688403639" duration="3697000" />
+      <workItem from="1602894326792" duration="6000" />
+      <workItem from="1603847059455" duration="708000" />
+      <workItem from="1605982939829" duration="14637000" />
     </task>
     <task id="LOCAL-00001" summary="Working on fixing mobile">
       <created>1600129680584</created>
@@ -104,21 +116,22 @@
     <MESSAGE value="Design finished, just need projects" />
     <MESSAGE value="Design finished, just need project photos" />
     <MESSAGE value="Project photos added!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Project photos added!" />
+    <MESSAGE value="Fix a11y of &lt;figure&gt;&#10;Fix project breakpoint sizes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix a11y of &lt;figure&gt;&#10;Fix project breakpoint sizes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="73" key="#Plugins" timestamp="1600038416051">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="361" y="73" key="#Plugins/0.0.1536.864@0.0.1536.864" timestamp="1600038416051" />
-    <state x="325" y="0" key="CommitChangelistDialog2" timestamp="1602693844078">
+    <state x="325" y="0" key="CommitChangelistDialog2" timestamp="1606158621429">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="325" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1602693844078" />
-    <state x="361" y="165" key="Vcs.Push.Dialog.v2" timestamp="1602693848449">
+    <state x="325" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1606158621429" />
+    <state x="361" y="165" key="Vcs.Push.Dialog.v2" timestamp="1606158722470">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="361" y="165" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1602693848449" />
+    <state x="361" y="165" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1606158722470" />
     <state x="425" y="197" key="run.anything.popup" timestamp="1600269200438">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

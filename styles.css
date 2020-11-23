@@ -3,20 +3,20 @@
 @tailwind utilities;
 
 .section {
-  @apply .w-full .px-4 .py-16;
+  @apply w-full px-4 py-16;
 }
 @screen sm {
   .section {
-    @apply .px-16;
+    @apply px-16;
   }
 }
 @screen md {
   .section {
-    @apply .max-w-6xl .mx-auto;
+    @apply max-w-6xl mx-auto;
   }
 }
 
-
+/* Projects list sizing */
 .projects-grid {
   --project-size: calc(90vw - 32px);
   grid-template-columns: auto var(--project-size) auto;
@@ -38,6 +38,11 @@
 @screen md {
   .projects-grid {
     --project-size: 280px;
+  }
+}
+@screen lg {
+  .projects-grid {
+    --project-size: 280px;
     grid-template-columns: auto var(--project-size) var(--project-size) var(--project-size) auto;
   }
 
@@ -45,7 +50,7 @@
   .projects-grid > *:nth-child(3n + 2) { grid-column: 3; }
   .projects-grid > *:nth-child(3n) { grid-column: 4; }
 }
-@screen lg {
+@screen xl {
   .projects-grid {
     --project-size: 300px;
   }
