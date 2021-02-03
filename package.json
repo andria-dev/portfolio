@@ -10,7 +10,7 @@
     "tailwindcss": "^2.0.1"
   },
   "scripts": {
-    "build:css": "yarn tailwindcss build styles.css -o output.css",
-    "watch:css": "nodemon --exec \"yarn build:css\" -w ./styles.css"
+    "build": "yarn tailwindcss build styles.css -o output.css",
+    "watch": "nodemon --exec \"yarn build:css\" -w ./styles.css"
   }
 }
