@@ -60,3 +60,8 @@
   padding-top: 0 !important;
   padding-bottom: 0 !important;
 }
+
+button:focus, a:focus {
+  @apply outline-white;
+  -moz-outline-radius: 4px;
+}

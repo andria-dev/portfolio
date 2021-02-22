@@ -11,6 +11,6 @@
   },
   "scripts": {
     "build": "yarn tailwindcss build styles.css -o output.css",
-    "watch": "nodemon --exec \"yarn build:css\" -w ./styles.css"
+    "watch": "nodemon --exec \"yarn build\" -w ./styles.css"
   }
 }
