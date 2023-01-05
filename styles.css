@@ -103,6 +103,9 @@ a:focus {
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
+#name-title {
+  white-space: nowrap;
+}
 #name-title>span {
   opacity: 0;
   display: inline-block;
