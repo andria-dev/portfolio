@@ -144,51 +144,40 @@
 			</p>
 			<div class="w-full grid place-items-center">
 				<div class="w-auto py-4 bg-transparent grid grid-cols-1 md:grid-cols-2 place-items-center md:gap-16">
-					<ul class="w-auto flex flex-col leading-6 md:py-4 col-span-1">
+					<ul class="w-auto flex flex-col flex-wrap leading-6 col-span-1">
 						<li class="pb-3">
-							<!-- <strong class="font-semibold contents">Very Fast Learner</strong> -->
-							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="140px"
-								height="25px">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 140 25"
+								width="140px" height="25px" overflow="visible">
 								<defs>
-									<text id="text" x="2px" y="18px"
+									<text id="text" x="3px" y="18px"
 										font-family="ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji"
 										font-size="1em" font-weight="700">
 										Very Fast Learner
 									</text>
 								</defs>
-								<filter id="glow">
-									<feGaussianBlur id="glowBlur" stdDeviation="3.5" result="coloredBlur" />
-									<feMerge>
-										<feMergeNode in="coloredBlur" />
-										<feMergeNode in="SourceGraphic" />
-									</feMerge>
-								</filter>
-								<filter id="shock2">
-									<feTurbulence type="fractalNoise" baseFrequency="0.2" numOctaves="1" seed="2" result="noise"
-										id="noise">
-										<animate attributeType="XML" attributeName="seed" from="2" to="120" dur="10s"
+								<filter id="shock">
+									<feTurbulence type="fractalNoise" baseFrequency="0.2" numOctaves="2" seed="2" result="noise">
+										<animate attributeType="XML" attributeName="seed" from="2" to="160" dur="12s"
 											repeatCount="indefinite" />
 									</feTurbulence>
-									<feMorphology id="morph3" in="SourceGraphic" operator="dilate" radius="1" result="morph1" />
-									<feMorphology id="morph4" in="morph1" operator="dilate" radius="1" result="morph2" />
+									<feMorphology in="SourceGraphic" operator="dilate" radius="2" result="morph1" />
+									<feMorphology in="morph1" operator="dilate" radius="1" result="morph2" />
 									<feComposite operator="out" in="morph2" in2="morph1" result="strokeText" />
 									<feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="strokeText" in2="noise"
 										result="displacementMap" color-interpolation-filters="sRGB" scale="10" />
-									<feGaussianBlur stdDeviation="5" result="coloredBlur" />
+									<feGaussianBlur stdDeviation="2" result="coloredBlur" />
 									<feMerge>
 										<feMergeNode in="coloredBlur" />
 										<feMergeNode in="displacementMap" />
 									</feMerge>
 								</filter>
-								<use xlink:href="#text" id="textShock" x="2" y="2" filter="url(#shock2)" stroke="0" stroke-width="2"
+								<use xlink:href="#text" x="2" y="2" filter="url(#shock)" stroke="0" stroke-width="2"
 									fill="hsl(38 100% 60%)" aria-hidden="true" />
-								<use xlink:href="#text" id="textFill" x="0" y="0" fill="black" aria-hidden="true" />
-								<use xlink:href="#text" id="textGlow" x="0" y="0" filter="url(#glow)" stroke="hsl(38 100% 60%)"
-									stroke-width="0.1" fill="transparent" aria-hidden="true" />
+								<use xlink:href="#text" id="text-fill" x="0" y="0" fill="black" aria-hidden="true" />
 							</svg>
 						</li>
 						<li class="pb-3">
-							HTML5, CSS4, and SCSS
+							HTML, CSS, and Preprocessors (Pug, SCSS)
 						</li>
 						<li class="pb-3">
 							React.js, Vue.js, and Angular
@@ -199,8 +188,6 @@
 						<li class="pb-3">
 							Test-driven development
 						</li>
-					</ul>
-					<ul class="w-auto flex flex-col md:py-4 col-span-1">
 						<li class="pb-3">
 							JavaScript and TypeScript
 						</li>
@@ -274,6 +261,16 @@
 								</svg>
 								<span>
 									Email
+								</span>
+							</a>
+							<a class="w-auto flex space-x-1 px-3 py-2 text-gray-100 focus:text-blue-300 hover:text-blue-300 transition-colors duration-200 ease-in-out"
+								href="https://linkedin.com/in/andria-dev/" tabindex="0">
+								<svg style="width:24px;height:24px" viewBox="0 0 24 24">
+									<path fill="currentColor"
+										d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19M18.5 18.5V13.2A3.26 3.26 0 0 0 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17A1.4 1.4 0 0 1 15.71 13.57V18.5H18.5M6.88 8.56A1.68 1.68 0 0 0 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19A1.69 1.69 0 0 0 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56M8.27 18.5V10.13H5.5V18.5H8.27Z" />
+								</svg>
+								<span>
+									LinkedIn
 								</span>
 							</a>
 						</div>

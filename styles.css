@@ -216,6 +216,28 @@ a:focus {
 	#squiggle { display: none; }
 }
 
+@keyframes fluctuating-opacity {
+	0% { opacity: 0.66171; }
+	10% { opacity: 0.76902; }
+	20% { opacity: 0.80578; }
+	30% { opacity: 0.84055; }
+	40% { opacity: 0.61806; }
+	50% { opacity: 0.87108; }
+	60% { opacity: 0.96266; }
+	70% { opacity: 0.79483; }
+	80% { opacity: 0.64353; }
+	90% { opacity: 0.79876; }
+	100% { opacity: 0.96833; }
+}
+#text-fill {
+	animation-name: fluctuating-opacity;
+	animation-iteration-count: infinite;
+	animation-play-state: running;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+}
+
+
 @media (prefers-reduced-motion: reduce) {
 	#name-title {
 		opacity: 0;
@@ -237,6 +259,8 @@ a:focus {
 		stroke-dashoffset: 0;
 		animation: none;
 	}
+
+	#text-fill { animation: none; }
 }
 
 .project {
