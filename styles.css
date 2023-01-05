@@ -240,11 +240,12 @@ a:focus {
 }
 
 .project {
-	@apply relative rounded-sm hover:scale-105 active:scale-105 focus-within:scale-105 hover:shadow-lg;
+	@apply relative rounded-sm hover:scale-105 active:scale-105 focus-within:scale-105 hover:shadow-lg active:shadow-lg focus-within:shadow-lg;
 	transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 150ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .project-details {
-	@apply absolute left-0 bottom-0 text-white bg-black p-4 rounded-sm;
+	@apply absolute left-2 bottom-1.5 text-white bg-gray-900 p-4 rounded-sm;
+	transform-origin: center;
 	transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 150ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .project:hover .project-details,
