@@ -171,7 +171,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"autoprefixer@npm:latest":
+"autoprefixer@npm:^10.4.13":
   version: 10.4.13
   resolution: "autoprefixer@npm:10.4.13"
   dependencies:
@@ -1044,7 +1044,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nodemon@npm:latest":
+"nodemon@npm:^2.0.20":
   version: 2.0.20
   resolution: "nodemon@npm:2.0.20"
   dependencies:
@@ -1183,10 +1183,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "portfolio@workspace:."
   dependencies:
-    autoprefixer: latest
-    nodemon: latest
-    postcss: latest
-    tailwindcss: latest
+    autoprefixer: ^10.4.13
+    nodemon: ^2.0.20
+    postcss: ^8.4.20
+    tailwindcss: ^3.2.4
   languageName: unknown
   linkType: soft
 
@@ -1260,7 +1260,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.4.18, postcss@npm:latest":
+"postcss@npm:^8.4.18, postcss@npm:^8.4.20":
   version: 8.4.20
   resolution: "postcss@npm:8.4.20"
   dependencies:
@@ -1553,7 +1553,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tailwindcss@npm:latest":
+"tailwindcss@npm:^3.2.4":
   version: 3.2.4
   resolution: "tailwindcss@npm:3.2.4"
   dependencies:
