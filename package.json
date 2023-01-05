@@ -9,7 +9,7 @@
     "tailwindcss": "latest"
   },
   "scripts": {
-    "build": "yarn tailwindcss build styles.css -o output.css",
-    "watch": "nodemon --exec \"yarn build\" -w ./styles.css"
+    "build": "yarn tailwindcss build -i styles.css -o output.css",
+    "watch": "nodemon --exec \"yarn build\" -w index.html -w styles.css"
   }
 }
