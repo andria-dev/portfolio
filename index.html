@@ -60,9 +60,8 @@
 			</h2>
 			<p class="mb-2 pb-2 py-2 font-serif">
 				I have worked on a variety of different projects ranging from stunning landing pages to fully functional web
-				apps
-				and PWAs. Many of my projects utilize git via GitHub for version control and are hosted on GitHub Pages,
-				Netlify, or Vercel . Displayed below are a few of these projects I've worked on. Please feel free to view their
+				apps and PWAs. Many of my projects utilize git via GitHub for version control and are hosted on GitHub Pages,
+				Netlify, or Vercel. Displayed below are a few of these projects I've worked on. Please feel free to view their
 				READMEs and code on GitHub; you can also find links to the deployed sites as well.
 			</p>
 			<div class="w-full">
@@ -147,7 +146,46 @@
 				<div class="w-auto py-4 bg-transparent grid grid-cols-1 md:grid-cols-2 place-items-center md:gap-16">
 					<ul class="w-auto flex flex-col leading-6 md:py-4 col-span-1">
 						<li class="pb-3">
-							<strong class="font-semibold contents">Very Fast Learner</strong>
+							<!-- <strong class="font-semibold contents">Very Fast Learner</strong> -->
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="140px"
+								height="25px">
+								<defs>
+									<text id="text" x="2px" y="18px"
+										font-family="ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji"
+										font-size="1em" font-weight="700">
+										Very Fast Learner
+									</text>
+								</defs>
+								<filter id="glow">
+									<feGaussianBlur id="glowBlur" stdDeviation="3.5" result="coloredBlur" />
+									<feMerge>
+										<feMergeNode in="coloredBlur" />
+										<feMergeNode in="SourceGraphic" />
+									</feMerge>
+								</filter>
+								<filter id="shock2">
+									<feTurbulence type="fractalNoise" baseFrequency="0.2" numOctaves="1" seed="2" result="noise"
+										id="noise">
+										<animate attributeType="XML" attributeName="seed" from="2" to="120" dur="10s"
+											repeatCount="indefinite" />
+									</feTurbulence>
+									<feMorphology id="morph3" in="SourceGraphic" operator="dilate" radius="1" result="morph1" />
+									<feMorphology id="morph4" in="morph1" operator="dilate" radius="1" result="morph2" />
+									<feComposite operator="out" in="morph2" in2="morph1" result="strokeText" />
+									<feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="strokeText" in2="noise"
+										result="displacementMap" color-interpolation-filters="sRGB" scale="10" />
+									<feGaussianBlur stdDeviation="5" result="coloredBlur" />
+									<feMerge>
+										<feMergeNode in="coloredBlur" />
+										<feMergeNode in="displacementMap" />
+									</feMerge>
+								</filter>
+								<use xlink:href="#text" id="textShock" x="2" y="2" filter="url(#shock2)" stroke="0" stroke-width="2"
+									fill="hsl(38 100% 60%)" aria-hidden="true" />
+								<use xlink:href="#text" id="textFill" x="0" y="0" fill="black" aria-hidden="true" />
+								<use xlink:href="#text" id="textGlow" x="0" y="0" filter="url(#glow)" stroke="hsl(38 100% 60%)"
+									stroke-width="0.1" fill="transparent" aria-hidden="true" />
+							</svg>
 						</li>
 						<li class="pb-3">
 							HTML5, CSS4, and SCSS
